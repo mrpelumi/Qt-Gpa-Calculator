@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>437</width>
+    <height>411</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>AddCourseForm</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="actionImages.qrc">
+    <normaloff>:/toolImage/gpa_calculator.png</normaloff>:/toolImage/gpa_calculator.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget{
+background-color: rgb(255, 255, 255);
+}
+QPushButton{
+background-color: rgb(129, 157, 200);
+padding:15px;
+border-radius:5px;
+font-size:14px;
+font-weight:bold;
+font-family:&quot;Arial Rounded MTBold&quot;;
+color:white;
+}
+QLineEdit{
+border:3px solid rgb(129, 157, 200);
+padding:15px;
+border-radius:10px;
+margin-bottom:10px;
+	font: 14pt &quot;Arial&quot;;
+	color: rgb(111, 105, 200);
+}
+QLabel{
+font: 20pt &quot;Arial Rounded MT Bold&quot;;
+	color: rgb(111, 105, 200);
+}
+#submitbutton:hover{
+background-color:rgb(111,105,200)
+}
+QComboBox{
+border:3px solid rgb(129, 157, 200);
+padding:15px;
+border-radius:10px;
+margin-bottom:10px;
+	font: 14pt &quot;Arial&quot;;
+	color: rgb(111, 105, 200);
+}
+</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLabel" name="addcourse">
+       <property name="text">
+        <string>ADD COURSE</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="courseline">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="placeholderText">
+        <string>Course Code</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="unitline">
+       <property name="contextMenuPolicy">
+        <enum>Qt::DefaultContextMenu</enum>
+       </property>
+       <property name="placeholderText">
+        <string>Unit</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="gradecombo">
+       <property name="toolTip">
+        <string/>
+       </property>
+       <property name="toolTipDuration">
+        <number>-1</number>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="sizeAdjustPolicy">
+        <enum>QComboBox::AdjustToContents</enum>
+       </property>
+       <item>
+        <property name="text">
+         <string>A</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>B</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>C</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>D</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>F</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="submitbutton">
+       <property name="text">
+        <string>SUBMIT</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="actionImages.qrc"/>
+ </resources>
+ <connections/>
+</ui>
