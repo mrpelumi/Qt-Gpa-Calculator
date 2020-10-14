@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="toolImage">
+    <file>gpa_calculator.png</file>
+    <file>contact_info.png</file>
+    <file>delete.png</file>
+    <file>new_file.png</file>
+    <file>refresh.png</file>
+  </qresource>
+</RCC>
